@@ -72,7 +72,9 @@
                             <li><a href="http://lcs2.iiitd.edu.in/CONSTRAINT-2021/">Workshop</a></li>
                             <li><a class="page-scroll" href="#section-news">News</a></li>
                             <li><a class="page-scroll" href="#section-intro">About</a></li>
-                            <li>
+                            <li><a class="page-scroll" href="#section-shared">CALL FOR SUBMISSIONS</a></li>
+                            <li><a class="page-scroll" href="#section-organizingcommittee">COMMITTEE</a></li>
+                            <!--
                                 <div class="dropdown">
                                     <button class="btn btn-secondary dropdown-toggle" style="padding:0; padding-top:13px;background-color: transparent;font-size: 15px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <a class="page-scroll" href="#">CALL FOR SUBMISSIONS</a>
@@ -83,7 +85,7 @@
                                         <a class="dropdown-item page-scroll" style="color: #0e1555;" href="#section-journal">Journal Special Issue</a>
                                         <a class="dropdown-item page-scroll" style="color: #0e1555;" href="#"></a>
                                     </div>
-                            </li>
+                            </li> 
                             <li>
                                 <div class="dropdown">
                                     <button class="btn btn-secondary dropdown-toggle" style="padding:0; padding-top:13px;background-color: transparent;font-size: 15px;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -96,7 +98,7 @@
                                         <a class="dropdown-item page-scroll" style="color: #0e1555;" href="#"></a>
                                     </div>
                                 </div>
-                            </li>
+                            </li>-->
                             <li><a class="page-scroll" href="#section-contact">Contact Us</a></li>
                         </ul>
                     </div>
@@ -113,7 +115,7 @@
             <div class="content">
                 <h1>SHARED TASK @</h1>
                 <h1>CONSTRAINT 2021</h1>
-                <h3 style="color:white;">First Workshop on ​ Combating ​ On​line Ho​st​ile Posts in ​ Regional L​anguages dur​ing Emerge​ncy
+                <h3 style="color:white;">First Workshop on ​Combating ​On​line Ho​st​ile Posts in ​Regional L​anguages dur​ing Emerge​ncy
                     Si​tuation</h3>
 
                 <!-- <div class="event-date">11<sup>th</sup> January 2021, IIIT Delhi</div> -->
@@ -141,7 +143,7 @@
                         <p align="justify">
                         <ul style="list-style: none;">
                             <li>
-                                <div style="width: 5%; float: left;"><i class="fa fa-cog fa-spin fa-x" style="color:#0000ff;" aria-hidden="true"></i></div>Workshop proceedings will be published in Springer CCIS.
+                                <div style="width: 5%; float: left;"><i class="fa fa-cog fa-spin fa-x" style="color:#0000ff;" aria-hidden="true"></i></div>Workshop proceedings (including task description papers) will be published in Springer CCIS.
                             </li>
                         </ul>
                         </p>
@@ -156,12 +158,37 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-title">
-                            <h1>ABOUT THE WORKSHOP</h1>
+                            <h1>ABOUT THE SHARED TASK</h1>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
+                        <p>For worshop details please visit: <a href = "http://lcs2.iiitd.edu.in/CONSTRAINT-2021/" >http://lcs2.iiitd.edu.in/CONSTRAINT-2021/</a> </p>
+                            <ul style="text-align: justify; list-style: none;">
+                                <li><b>Tasks-</b> We plan to have 2 tasks:
+                                    <ul style="margin-left: 2%;">
+                                        <li>
+                                            COVID19 Fake news detection - The data will have English tweets which are labeled as fake or real.  The task is to build a classifier.<br>
+                                            Examples: <br><i>If you take Crocin thrice a day you are safe.</i> - Fake <br>
+                                            <i> Wearing mask can protect you from the virus </i> - Real
+
+                                        </li> 
+
+                                        <li>
+                                            Hostility detection - The data will have Hindi (Devnagri) tweets which are labeled as Hostile or Non-Hostile. The task is to build a classifier.<br>
+                                            Examples: <br><i>PENDING</i> - Hostile <br>
+                                            <i> PENDING </i> - Real
+
+                                        </li>
+                                        <br>
+                                         We will provide the training set to build the models. <br>
+                                         Final ranking will be decided by weighted F1 score on an useen test set. <br>
+                                         More instructions/details regarding submitting etc will be provided soon.                       
+                                </li>               
+                            </ul>
+                        </p>
+                        <!--
                         <p align="justify">
                             The increasing accessibility of the Internet has dramatically changed the
                             way we consume information. The ease of social media usage not only encourages individuals to freely express
@@ -170,7 +197,7 @@
                             emergencies such as the 2021 US presidential election, COVID-19 pandemic spreading. Most of such hostile posts
                             are written in regional languages, and therefore can easily evade online surveillance engines, the majority of which
                             are trained on the posts written in resource-rich languages such as English and Chinese. Therefore, regions such as
-                            Asia, Africa, South America, where low-resource ​ regional languages are used for day-to-day communication,
+                            Asia, Africa, South America, where low-resource ​regional languages are used for day-to-day communication,
                             suffer due to the lack of tools, benchmark datasets and learning techniques. Other developing countries such as
                             Italy, Spain, where the used languages (pseudo-low-resource) are not as equipped with sophisticated computational
                             resources as English, might also be facing the same issues.<br />
@@ -182,29 +209,32 @@
                         <ol>
                             <li><b>Regional language:</b> The offensive posts under inspection may be written in
                                 low-resource regional languages (e.g., Tami, Urdu, Bangali, Polish, Czech, Lithuanian, etc.).</li>
-                            <li><b>Emergency situation:</b> ​ The proposed solutions should be able to tackle misinformation during emergency situations where due to the lack of enough historical data, learning models need to adopt additional intelligence to handle emerging and novel posts.</li>
+                            <li><b>Emergency situation:</b> ​The proposed solutions should be able to tackle misinformation during emergency situations where due to the lack of enough historical data, learning models need to adopt additional intelligence to handle emerging and novel posts.</li>
                             <li><b>Early detection:</b> ​Since the effect of misinformation during emergency situations is highly detrimental for society (e.g., health-related misadvice during a pandemic may take human’s life), we encourage the solutions to be able to detect such hostile posts as early as possible after their appearance on social media.</li>
                         </ol>
                         <br />
 
                         </p>
+                    -->
                     </div>
 
                 </div>
             </div>
         </section>
         <!-- .about-event -->
-
+                <!--
         <section id="section-proposed" class="section-wrapper pricing-section gray-bg">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-title">
                             <h1>CALL FOR SUBMISSIONS</h1><br />
+
                             <h2>REGULAR PAPER SUBMISSION</h2>
                         </div>
                     </div>
                 </div>
+
                 <div class="row">
                     <ul style="text-align: justify;list-style: none;">
                         <li><b>Topics of Interests:</b> We invite the submission of high-quality manuscripts reporting relevant research in the area of collecting, managing, mining, and understanding hostile data from social media platforms. Topics of interest include, but are not limited to:
@@ -253,7 +283,7 @@
 
                     </ul>
 
-                </div>
+                </div>here -->
             </div>
         </section>
 
@@ -270,6 +300,7 @@
                     <div class="col-md-12">
                         <div class="row">
                             <ul style="text-align: justify; list-style: none;">
+                                <!--
                                 <li><b>Task:</b> We are planning to release two types of datasets:
                                     <ul style="margin-left: 2%;">
                                         <li>English microblogging posts related to COVID19</li>
@@ -278,15 +309,23 @@
                                     The task is to classify each post into fake or real. We will provide the training set to build the models. The models will be evaluated based on the test set.
                                 </li>
                                 <br>
+                            -->
                                 <li><b>Important Dates:</b>
                                     <ul style="margin-left: 2%;">
                                         <li><b>October 1, 2020:</b> Release of the training set</li>
                                         <li><b>December 1, 2020:</b> Release of the test set</li>
                                         <li><b>December 10, 2020:</b> Deadline for submitting the final results</li>
-                                        <li><b>December 12, 2020:</b> Announcement of the results and invitation of a few systems to submit their system papers</li>
-                                        <li><b>December 30, 2020:</b> System paper submission deadline</li>
+                                        <li><b>December 12, 2020:</b> Announcement of the results </li>
+                                        <li><b>December 30, 2020:</b> System paper submission deadline (All teams are invited to submit a paper)</li>
                                     </ul>
                                 </li>
+                                <br>
+                                <li><b>System Paper Submission Instructions:</b>
+                                    <ul style="margin-left: 2%;">
+                                    <li>TBD</li>
+                                    </ul>
+                                </li>
+                                <!--
                                 <br>
                                 <li><b>Organizing Committee Chairs</b>
                                     <ul style="margin-left: 2%;">
@@ -307,6 +346,7 @@
                                         <li>Gitanjali Kumari, IIT Patna, India</li>
                                     </ul>
                                 </li>
+                            -->
                             </ul>
                         </div>
 
@@ -314,7 +354,7 @@
                 </div>
         </section>
         <!-- .about-event -->
-
+<!--
         <section id="section-journal" class="section-wrapper about-event gray-bg" style="margin-top: -5%;">
             <div class="container">
                 <div class="row">
@@ -330,12 +370,12 @@
 
                             A selected set of papers from both the regular call and the shared task will be invited to submit to a special issue of the journal.
 
-                            <!-- </ul> -->
+                            
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!--   <section id="section-steeringcommittee" class="section-wrapper team client-logo">
             <div class="container">
@@ -394,7 +434,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-title">
-                        <h1>TASK ORGANIZING COMMITTEE</h1>
+                        <h1>ORGANIZING COMMITTEE CHAIRS</h1>
                     </div>
                 </div>
             </div>
@@ -411,30 +451,30 @@
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <figure class="thumbnail">
-                        <a href="http://faculty.iiitd.ac.in/~tanmoy/"><img src="img/committee/tanmoy.png" class="img-responsive img-circle" alt="Image" style="height:190px; width:170px;"></a>
-                        <figcaption class="caption text-center">
-                            <h3> Tanmoy Chakraborty
-                                <small> IIIT Delhi, India </small>
-                            </h3>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <figure class="thumbnail">
-                        <a href="http://faculty.iiitd.ac.in/~tanmoy/"><img src="img/committee/tanmoy.png" class="img-responsive img-circle" alt="Image" style="height:190px; width:170px;"></a>
-                        <figcaption class="caption text-center">
-                            <h3> Tanmoy Chakraborty
-                                <small> IIIT Delhi, India </small>
-                            </h3>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <figure class="thumbnail">
                         <a href="https://www.iiitd.ac.in/shad"><img src="img/committee/shad.jpeg" class="img-responsive img-circle" alt="Image" style="height:190px; width:170px;"></a>
                         <figcaption class="caption text-center">
                             <h3>Md. Shad Akhtar
-                                <small>IIIT Delhi, India</small>
+                                <small> IIIT Delhi, India </small>
+                            </h3>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <figure class="thumbnail">
+                        <a href="https://www.iitp.ac.in/~asif/"><img src="img/committee/asif.jpg" class="img-responsive img-circle" alt="Image" style="height:190px; width:170px;"></a>
+                        <figcaption class="caption text-center">
+                            <h3> Asif Ekbal 
+                                <small> IIT Patna, India</small>
+                            </h3>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <figure class="thumbnail">
+                        <a href="http://amitavadas.com/"><img src="img/committee/amitava.jpg" class="img-responsive img-circle" alt="Image" style="height:190px; width:170px;"></a>
+                        <figcaption class="caption text-center">
+                            <h3>Amitava Das
+                                <small> Wipro Research, India</small>
                             </h3>
                             <!-- <ul class="social-links">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -451,15 +491,25 @@
             <div class="row" style="margin-top: 7%">
                 <div class="col-md-12">
                     <div class="section-title">
-                        <h1>TASK BLAH BLAH</h1>
+                        <h1>ORGANIZING COMMITTEE COORDINATORS</h1>
                     </div>
                 </div>
                 <!-- .row -->
                 <div class="col-lg-4 col-md-6">
                     <figure class="thumbnail">
-                        <a href="https://hridaydutta123.github.io/"><img src="img/committee/hridoy.jpg" class="img-responsive img-circle" alt="Image" style="height:190px; width:170px;"></a>
+                        <a href="https://www.linkedin.com/in/parth-patwa/"><img src="img/committee/parth.jpg" class="img-responsive img-circle" alt="Image" style="height:190px; width:170px;"></a>
                         <figcaption class="caption text-center">
-                            <h3>Hridoy Sankar Dutta
+                            <h3>Parth Patwa
+                                <small>IIIT Sri City, India </small>
+                            </h3>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <figure class="thumbnail">
+                        <a href="https://www.linkedin.com/in/mohit-bhardwaj-36a3b1158/"><img src="img/committee/Mohit Bhardwaj.jpg" class="img-responsive img-circle" alt="Image" style="height:190px; width:170px;"></a>
+                        <figcaption class="caption text-center">
+                            <h3>Mohit Bhardwaj
                                 <small>IIIT Delhi, India </small>
                             </h3>
                         </figcaption>
@@ -467,50 +517,40 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <figure class="thumbnail">
-                        <a href="https://hridaydutta123.github.io/"><img src="img/committee/hridoy.jpg" class="img-responsive img-circle" alt="Image" style="height:190px; width:170px;"></a>
+                        <a href="https://scholar.google.com/citations?user=SWrxvtsAAAAJ&hl=en"><img src="img/committee/srinivas_S20170990008.jpeg" class="img-responsive img-circle" alt="Image" style="height:190px; width:170px;"></a>
                         <figcaption class="caption text-center">
-                            <h3>Hridoy Sankar Dutta
-                                <small>IIIT Delhi, India </small>
+                            <h3>Srinivas PYKL
+                                <small>IIIT Sri City, India </small>
                             </h3>
                         </figcaption>
                     </figure>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <figure class="thumbnail">
-                        <a href="https://hridaydutta123.github.io/"><img src="img/committee/hridoy.jpg" class="img-responsive img-circle" alt="Image" style="height:190px; width:170px;"></a>
+                        <a href="https://www.linkedin.com/in/shivam-sharma-36221040/"><img src="img/committee/Shivam_Form.jpg" class="img-responsive img-circle" alt="Image" style="height:190px; width:170px;"></a>
                         <figcaption class="caption text-center">
-                            <h3>Hridoy Sankar Dutta
-                                <small>IIIT Delhi, India </small>
+                            <h3>Shivam Sharma
+                                <small>Wipro Research, India </small>
                             </h3>
                         </figcaption>
                     </figure>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <figure class="thumbnail">
-                        <a href="https://hridaydutta123.github.io/"><img src="img/committee/hridoy.jpg" class="img-responsive img-circle" alt="Image" style="height:190px; width:170px;"></a>
+                        <a href="https://www.linkedin.com/in/vineeth-guptha-55a755116/"><img src="img/committee/vineeth.jpg" class="img-responsive img-circle" alt="Image" style="height:190px; width:170px;"></a>
                         <figcaption class="caption text-center">
-                            <h3>Hridoy Sankar Dutta
-                                <small>IIIT Delhi, India </small>
+                            <h3>Vineeth Guptha
+                                <small>Wipro Research, India </small>
                             </h3>
                         </figcaption>
                     </figure>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <figure class="thumbnail">
-                        <a href="https://hridaydutta123.github.io/"><img src="img/committee/hridoy.jpg" class="img-responsive img-circle" alt="Image" style="height:190px; width:170px;"></a>
+                        <a href="https://www.linkedin.com/in/gitanjali-singh-67842187/"><img src="img/committee/Gitanjali_passport_pic.jpg" class="img-responsive img-circle" alt="Image" style="height:190px; width:170px;"></a>
                         <figcaption class="caption text-center">
-                            <h3>Hridoy Sankar Dutta
-                                <small>IIIT Delhi, India </small>
-                            </h3>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <figure class="thumbnail">
-                        <a href="https://hridaydutta123.github.io/"><img src="img/committee/hridoy.jpg" class="img-responsive img-circle" alt="Image" style="height:190px; width:170px;"></a>
-                        <figcaption class="caption text-center">
-                            <h3>Hridoy Sankar Dutta
-                                <small>IIIT Delhi, India </small>
+                            <h3>Gitanjali Kumari 
+                                <small>IIT Patna, India </small>
                             </h3>
                         </figcaption>
                     </figure>
@@ -571,7 +611,7 @@
 
 
 
-        <section id="section-contact" class="section-wrapper" style="margin-top: -4%;">
+        <section id="section-contact" class="section-wrapper about-event gray-bg" style="margin-top: -4%;">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -587,8 +627,9 @@
             </div> -->
 
                     <div class="container" style="text-align: center;">
-                        <p>Email ID: <a href="mailto:acss@iiitd.ac.in">cofad@iiitd.ac.in</a></p>
-                        <p>To submit your Email ID &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="btn btn-primary">Click Here</a></p>
+                        <p>Email ID: <a href="tanmoy@iiitd.ac.in">tanmoy@iiitd.ac.in</a></p>
+                        <p>Email ID: <a href="parthprasad.p17@iiits.in">parthprasad.p17@iiits.in</a></p>
+                        <p>Subscribe to our mailing list&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://forms.gle/PHeoXkDjywaN5vPx7" class="btn btn-primary">Click Here</a></p>
 
                         <div class="container">
                             <div class="row">
@@ -609,7 +650,7 @@
 
 
     <footer class="footer">
-        <div class="copyright-section gray-bg">
+        <div class="copyright-section ">
             <div class="container">
                 <div class="col-md-12">
                     <div class="copytext text-center">&copy; CONSTRAINT 2021. All rights reserved | Template By: <a href="https://uicookies.com">uiCookies</a></div>
