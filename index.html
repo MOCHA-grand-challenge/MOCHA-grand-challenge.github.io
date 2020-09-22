@@ -166,18 +166,29 @@
                     <div class="col-md-12">
                         <p id="link-site"><span>For worshop details please visit:</span> <a href="http://lcs2.iiitd.edu.in/CONSTRAINT-2021/">http://lcs2.iiitd.edu.in/CONSTRAINT-2021/</a> </p><br>
                         <ul style="text-align: justify; list-style: none;">
-                            <li><b id="task-main">Tasks-</b> <span class="extra">We plan to have 2 tasks:</span><br><br>
+                            <li><b id="task-main">Tasks-</b> <span class="extra">The CONSTRAINT-2020 shared task on the hostile post detection invites participation in two subtasks:</span><br><br>
                                 <ul style="margin-left: 2%;">
                                     <li>
-                                        <span class="subtask">COVID19 Fake news detection</span> - The data will have English tweets which are labeled as fake or real. The task is to build a classifier.<br>
-                                        <p id="example">Examples: <br><code>If you take Crocin thrice a day you are safe.</code> <span class="badge badge-pill">Fake</span><br>
+                                        <span class="subtask">COVID19 Fake news detection</span> - This subtask focuses on the
+detection of COVID19-related fake news in English. The sources of data are
+various social-media platforms such as Twitter, Facebook, Instagram, etc. Given a
+social media post, the objective of the shared task is to classify it into either fake
+or real news. For example, the following two posts belong to fake and real
+categories, respectively.<br>
+                                        <p id="example"><code>If you take Crocin thrice a day you are safe.</code> <span class="badge badge-pill">Fake</span><br>
                                         <code id="real"> Wearing mask can protect you from the virus </code><span class="badge badge-pill">Real</span></p>
                                         
 
                                     </li>
                                     <br>
                                     <li>
-                                        <span class="subtask">Hostility detection</span> - The data will have Hindi (Devnagri) tweets which are labeled as Hostile or Non-Hostile. The task is to build a classifier. More details coming soon.<br>
+                                        <span class="subtask">Hostility detection</span> -This subtask focuses on a variety of hostile
+posts in Hindi Devanagari script collected from Twitter and Facebook. The set of
+valid categories are fake news, hate speech, offensive, defamation,
+miscellaneous, and non-hostile posts. It is a multi-label multi-class classification
+problem where each post can belong to one or more of these hostile classes.
+However, the miscellaneous and the non-hostile posts cannot be grouped with
+any other class. The evaluation of this subtask will be two-dimensional as follows:<br>
                                         <p id="example">Examples: <br><i>PENDING</i>&nbsp;&nbsp;<span class="badge badge-pill">Hostile</span> <br>
                                             <i> PENDING </i>&nbsp; <span class="badge badge-pill">Non-Hostile</span></p>
 
