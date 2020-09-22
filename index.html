@@ -162,44 +162,77 @@
                         </div>
                     </div>
                 </div>
+
+
                 <div class="row">
+
                     <div class="col-md-12">
+
                         <p id="link-site"><span>For worshop details please visit:</span> <a href="http://lcs2.iiitd.edu.in/CONSTRAINT-2021/">http://lcs2.iiitd.edu.in/CONSTRAINT-2021/</a> </p><br>
+
                         <ul style="text-align: justify; list-style: none;">
                             <li><b id="task-main">Tasks-</b> <span class="extra">The CONSTRAINT-2020 shared task on the hostile post detection invites participation in two subtasks:</span><br><br>
                                 <ul style="margin-left: 2%;">
                                     <li>
-                                        <span class="subtask">COVID19 Fake news detection</span> - This subtask focuses on the
-detection of COVID19-related fake news in English. The sources of data are
-various social-media platforms such as Twitter, Facebook, Instagram, etc. Given a
-social media post, the objective of the shared task is to classify it into either fake
-or real news. For example, the following two posts belong to fake and real
-categories, respectively.<br>
+                                        <span class="subtask">COVID19 Fake News Detection in English</span> - This subtask focuses on the detection of COVID19-related fake news in English. The sources of data are various social-media platforms such as Twitter, Facebook, Instagram, etc. Given a social media post, the objective of the shared task is to classify it into either fake or real news. For example, the following two posts belong to fake and real categories, respectively.<br>
+
                                         <p id="example"><code>If you take Crocin thrice a day you are safe.</code> <span class="badge badge-pill">Fake</span><br>
                                         <code id="real"> Wearing mask can protect you from the virus </code><span class="badge badge-pill">Real</span></p>
                                         
-
                                     </li>
                                     <br>
                                     <li>
-                                        <span class="subtask">Hostility detection</span> -This subtask focuses on a variety of hostile
-posts in Hindi Devanagari script collected from Twitter and Facebook. The set of
-valid categories are fake news, hate speech, offensive, defamation,
-miscellaneous, and non-hostile posts. It is a multi-label multi-class classification
-problem where each post can belong to one or more of these hostile classes.
-However, the miscellaneous and the non-hostile posts cannot be grouped with
-any other class. The evaluation of this subtask will be two-dimensional as follows:<br>
-                                        <p id="example">Examples: <br><i>PENDING</i>&nbsp;&nbsp;<span class="badge badge-pill">Hostile</span> <br>
-                                            <i> PENDING </i>&nbsp; <span class="badge badge-pill">Non-Hostile</span></p>
-
-                                    </li>
+                                        <span class="subtask">Hostile Post Detection in Hindi</span> -This subtask focuses on a variety of hostile posts in Hindi Devanagari script collected from Twitter and Facebook. The set of valid categories are fake news, hate speech, offensive, defamation, miscellaneous, and non-hostile posts. It is a multi-label multi-class classification problem where each post can belong to one or more of these hostile classes. However, the miscellaneous and the non-hostile posts cannot be grouped with any other class. The evaluation of this subtask will be two-dimensional as follows:<br>
+                                        <ol>
+                                            <li><b>Coarse-grained evaluation:</b> It is a binary evaluation of hostile vs non-hostile posts.</li>
+                                            <li><b>Fine-grained evaluation:</b> It is a fine-grained evaluation of the hostile classes.</li>
+                                       
+                                        </ol>
+                                    
                                     <br>
-                                    <i class="fa fa-cog fa-spin fa-x" style="color:#0000ff;" aria-hidden="true"></i>&nbsp;&nbsp;We will provide the training set to build the models. <br>
-                                    <i class="fa fa-cog fa-spin fa-x" style="color:#0000ff;" aria-hidden="true"></i>&nbsp;&nbsp;Final ranking will be decided by weighted F1 score on an useen test set. <br>
-                                    <i class="fa fa-cog fa-spin fa-x" style="color:#0000ff;" aria-hidden="true"></i>&nbsp;&nbsp;More instructions/details regarding submitting etc will be provided soon.
+                                    <b> Definitions of the class labels: </b><br>
+                                    <ul>
+                                        <li><b> Fake News: </b>A claim or information that is verified to be not true. </li>
+                                        <li><b>Hate Speech:</b> A post targeting a specific group of people based on their ethnicity, religious beliefs, geographical belonging, race, etc., with malicious intentions of spreading hate or encouraging violence. </li>
+                                        <li><b> Offensive: </b>A post containing profanity, impolite, rude, or vulgar language to insult a targeted individual or group. </li>
+                                        <li> <b>Defamation: </b>A mis-information regarding an individual or group. </li>
+                                        <li> <b>Miscellaneous: </b>A hostile post other than the above four classes. </li>
+                                        <li><b> Non-hostile:</b> A post without any hostility. </li>
+
+                                    </ul>
+                                    <br>
+                                    <b>Examples</b><br>
+                                    <p id="example">
+                                        <code>ये देखो इस्लाम क्या क्या सिखाता है जिहाद से लेकर आतंकवादी और दंगों से लेकर चोरी बुर्खे की आड़ में चद्दर चुराती महिलाएं</code> <span class="badge badge-pill">{hate}</span><br>
+                                        <code>मोहतरमा JNU की 43 साल की छात्रा हैं , और कमाल की बात है कि उनकी बेटी मोना भी JNU में ही पड़ती है</code> <span class="badge badge-pill">{Fake, Defamation}</span><br>
+                                        <code>जब इन दलितों को (सभी नहीं) हिन्दू धर्म और हिन्दू देवी देवताओं से इतनी नफरत भारी हुई है तो धूर्त कहीं के अपना नाम हिन्दुओं के जैसे ही क्यों रखते हैं। किसने रोका है कुछ भी बन से, बन जाओ मुस्लिम, ईसाई और जो मन करे। इस धूर्त की हिम्मत नहीं कि किसी दूसरे धर्म के बारे ऐसा बोल दे ।</code> <span class="badge badge-pill">{{Hate, Offensive}</span><br>
+                                        <code>जिस देश मे बाल मजदूरी होती हो उस देश मे बेरोजगारी भी है। बच्चों तक के लिये काम, पर बड़ों को चाहिए बैठने के दाम,,,,, यानी सरकारी नौकरी</code> <span class="badge badge-pill">{Miscellaneous}</span><br>
+
+                                        <code id="real"> डॉक्टर कफ़ील ख़ान को हाईकोर्ट से मिली ज़मानत https://t.co/DH5WE370XT </code><span class="badge badge-pill">{Non-hostile}</span>
+                                    </p>
+
+
+                                </li>
+                                <b>Evaluation Metric:</b> The official evaluation metric for the shared task is weighted-average F1 score.
+                                <br>
+                                <b>Dataset: </b>The dataset will be released as a comma-separated (csv) file and the format will be:<br>
+                                <p  id="example">
+                                   <b> Train set: </b>&lt;unique_id, post, {labels}&gt;<br>
+                                   <b> Test set:</b> &lt;unique_id, post&gt;
+                                </p>
+                                <br>
+
+                                <b>Submission:</b> Each team should submit a csv file in the following format for the final evaluation:<br>
+                                    &lt;unique_id, {labels}&gt;<br>
+                                In case of multiple submissions by a team, we shall consider the last submission prior to the deadline for the final evaluation. No exceptions shall be made.<br>
+
+
+                                <b>System description paper: </b>All team/participants will be invited to submit their models as short papers to be included in the proceedings. Based on the reviewers' comments, we will decide which papers to be accepted.<br>
+
+                                <b>Submission details: </b> TBA
                             </li>
                         </ul>
-                        </p>
+
                         <!--
                         <p align="justify">
                             The increasing accessibility of the Internet has dramatically changed the
